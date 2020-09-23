@@ -647,15 +647,15 @@ class standard_inputs(threading.Thread):
         if commands[0] == 'list': #list command
             if len(commands) == 1:
                 self.print()
-                self.print("fang_apps\nfang_extensions")
+                self.print("apps\nextensions")
                 self.print()
                 get_in = prompt(self.channel, "Input list", line=False)
-                if get_in == "fang_extensions":
+                if get_in == "extensions":
                     self.print()
                     for x in extension_n:
                         self.print(x)
                     return commands[0]
-                if get_in == "fang_apps":
+                if get_in == "apps":
                     apps = []
                     for x in os.listdir("/Users/" + user + "/Fang_Apps"):
                         if x[len(x)-2:] == 'py':
@@ -667,12 +667,12 @@ class standard_inputs(threading.Thread):
                 else:
                     self.print("Error while listing")
             if len(commands) >= 2:
-                if commands[1] == "fang_extensions":
+                if commands[1] == "extensions":
                     self.print()
                     for x in extension_n:
                         self.print(x)
                     return commands[0]
-                if commands[1] == "fang_apps":
+                if commands[1] == "apps":
                     apps = []
                     for x in os.listdir("/Users/" + user + "/Fang_Apps"):
                         if x[len(x)-2:] == 'py':
@@ -687,7 +687,7 @@ class standard_inputs(threading.Thread):
                     
         
         if commands[0] == 'help': #help command
-            self.print('\n' + bot_setup['help'] + '\n\nPowered by CD BotCore v{}, Cryptonic Designs 2020.'.format(version))
+            self.print('\n' + bot_setup['help'] + '\n\nPowered by CD BotCore v{}'.format(version))
 
         if commands[0] == 'debug': #help command
             if not(HasAuthority(self.caller_id)):
