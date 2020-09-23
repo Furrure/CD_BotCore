@@ -13,7 +13,7 @@ def gain_info(intake):
 		os.mkdir(path + '/' + spath)
 	if not('callsign.dfi' in os.listdir(setup_file_path)):
 		opened = open(setup_file_path + '/callsign.dfi', 'w')
-		opened.write('fang')
+		opened.write('bot')
 		opened.close()
 	if not('channel.dfi' in os.listdir(setup_file_path)):
 		opened = open(setup_file_path + '/channel.dfi', 'w')
@@ -25,7 +25,7 @@ def gain_info(intake):
 		opened.close()
 	if not('parent_folder.dfi' in os.listdir(setup_file_path)):
 		opened = open(setup_file_path + '/parent_folder.dfi', 'w')
-		opened.write('FangBot')
+		opened.write('')
 		opened.close()
 	if not('token.dfi' in os.listdir(setup_file_path)):
 		opened = open(setup_file_path + '/token.dfi', 'w')
