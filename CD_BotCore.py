@@ -1,3 +1,8 @@
+'''
+JACOB SCRAPCHANSKY, 2020 - Python Based Discord Modular Bot system. 
+Some parts of the script are reminiscent of its old name, FangOS DE. Fang_Apps and Fang_Extensions likely will stay the same to maintain compatibility.
+'''
+
 #Seperate standard inputs, make threaded.
 import os #Import Necessary modules
 import getpass
