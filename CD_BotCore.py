@@ -1,5 +1,5 @@
 '''
-JACOB SCRAPCHANSKY, 2020 - Python Based Discord Modular Bot system. 
+JACOB SCRAPCHANSKY, 2021 - Python Based Discord Modular Bot system. 
 Some parts of the script are reminiscent of its old name, FangOS DE. Fang_Apps and Fang_Extensions likely will stay the same to maintain compatibility.
 '''
 
@@ -12,6 +12,7 @@ import asyncio
 import threading
 import access as npm
 import sys
+
 
 
 
@@ -85,7 +86,8 @@ threads = []
 message_channel = None
 message_guild = None
 
-version = '0.1.8 Beta'
+version = '0.2.0 Beta'
+build = 0
 closer = False
 client = discord.Client()
 
